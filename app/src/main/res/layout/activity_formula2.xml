@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад" />
+
+    <EditText
+        android:id="@+id/input_heat_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Нижча теплота згоряння (Q_i)" />
+
+    <EditText
+        android:id="@+id/input_ash_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Масовий вміст золи (A_r)" />
+
+    <EditText
+        android:id="@+id/input_gamma_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Масова частка горючих речовин (Г_вив)" />
+
+    <EditText
+        android:id="@+id/input_efficiency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ефективність очищення (η_ЗУ)" />
+
+    <EditText
+        android:id="@+id/input_light_ash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Частка легкої золи (a_вив)" />
+
+    <!-- Опціональне поле для показника емісії твердих продуктів взаємодії сорбенту (k_твS) -->
+    <EditText
+        android:id="@+id/input_sulfur_interaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Показник емісії твердих продуктів (k_твS)" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Результати будуть тут"
+        android:textSize="18sp" />
+
+</LinearLayout>
